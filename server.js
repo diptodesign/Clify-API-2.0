@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // ✅ YOUR MONGODB CONNECTION - WORKING!
-const MONGODB_URI = 'mongodb+srv://diptofreelancedesigner_db_user:XCUA8g2Rvn6Sk8bV@clifydb.a3wkhyc.mongodb.net/clifyDB?retryWrites=true&w=majority';
+const MONGODB_URI = 'mongodb://diptofreelancedesigner_db_user:XCUA8g2Rvn6Sk8bV@clifydb.a3wkhyc.mongodb.net:27017,clifydb-shard-00-01.a3wkhyc.mongodb.net:27017,clifydb-shard-00-02.a3wkhyc.mongodb.net:27017/clifyDB?replicaSet=atlas-xyz&ssl=true';
 
 // Connect to MongoDB
 mongoose.connect(MONGODB_URI)
